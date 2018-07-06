@@ -7,7 +7,7 @@ namespace Document
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Document");
+            Console.WriteLine("Document\n");
             Console.Write("Enter the name of the document: ");
             string name = Console.ReadLine();
             Console.Write("Enter the content of the document: ");
@@ -28,10 +28,10 @@ namespace Document
         static void MainWithOptionalRequirements() 
         {
             bool go = true;
+            Console.WriteLine("Document");
             while (go)
             {
-                Console.WriteLine("Document");
-                Console.Write("Enter the name of the document: ");
+                Console.Write("\nEnter the name of the document: ");
                 string name = Console.ReadLine();
                 Console.Write("Enter the content of the document: ");
                 string content = Console.ReadLine();
