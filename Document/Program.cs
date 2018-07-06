@@ -17,6 +17,7 @@ namespace Document
                 StreamWriter streamWriter = new StreamWriter(name + ".txt");
                 streamWriter.WriteLine(content);
                 streamWriter.Close();
+                Console.WriteLine("{0} was successfully saved. The document contains {1} characters.", name, content.Length);
             } 
             catch (Exception e) 
             {
@@ -43,6 +44,7 @@ namespace Document
                     }
                     streamWriter = new StreamWriter(name);
                     streamWriter.WriteLine(content);
+                    Console.WriteLine("{0} was successfully saved. The document contains {1} characters.", name, content.Length);
                 }
                 catch (Exception e)
                 {
