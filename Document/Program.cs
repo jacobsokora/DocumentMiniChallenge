@@ -8,9 +8,9 @@ namespace Document
         static void Main(string[] args)
         {
             Console.WriteLine("Document");
-            Console.WriteLine("Enter the name of the document: ");
+            Console.Write("Enter the name of the document: ");
             string name = Console.ReadLine();
-            Console.WriteLine("Enter the content of the document: ");
+            Console.Write("Enter the content of the document: ");
             string content = Console.ReadLine();
             try 
             {
@@ -30,9 +30,9 @@ namespace Document
             while (go)
             {
                 Console.WriteLine("Document");
-                Console.WriteLine("Enter the name of the document: ");
+                Console.Write("Enter the name of the document: ");
                 string name = Console.ReadLine();
-                Console.WriteLine("Enter the content of the document: ");
+                Console.Write("Enter the content of the document: ");
                 string content = Console.ReadLine();
                 StreamWriter streamWriter = null;
                 try
@@ -55,7 +55,7 @@ namespace Document
                         streamWriter.Close();
                     }
                 }
-                Console.WriteLine("Would you like to save another document? (y/n): ");
+                Console.Write("Would you like to save another document? (y/n): ");
                 go = Console.ReadLine().ToLower().Equals("y");
             }
         }
